@@ -2,7 +2,7 @@
 // Copyright (c) 2014-2018, The Monero Project
 // Copyright (c) 2018, The TurtleCoin Developers
 // Copyright (c) 2018, The DeroGold Association
-//
+// Copyright (c) 2019, The JankyCoin Association
 // Please see the included LICENSE file for more information.
 
 #pragma once
@@ -22,7 +22,7 @@ const uint64_t DIFFICULTY_TARGET                             = 10; // seconds
 const uint32_t CRYPTONOTE_MAX_BLOCK_NUMBER                   = 500000000;
 const size_t   CRYPTONOTE_MAX_BLOCK_BLOB_SIZE                = 500000000;
 const size_t   CRYPTONOTE_MAX_TX_SIZE                        = 1000000000;
-const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX       = 8411;
+const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX       = 26622;
 const uint32_t CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW          = 120;
 const uint64_t CRYPTONOTE_BLOCK_FUTURE_TIME_LIMIT            = 6 * DIFFICULTY_TARGET;
 
@@ -148,7 +148,7 @@ const char     P2P_NET_DATA_FILENAME[]                       = "p2pstate.bin";
 const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json";
 } // parameters
 
-const char     CRYPTONOTE_NAME[]                             = "DeroGold";
+const char     CRYPTONOTE_NAME[]                             = "JankyCoin";
 
 const uint8_t  TRANSACTION_VERSION_1                         =  1;
 const uint8_t  TRANSACTION_VERSION_2                         =  2;
@@ -167,8 +167,8 @@ const size_t   BLOCKS_IDS_SYNCHRONIZING_DEFAULT_COUNT        =  10000;  //by def
 const size_t   BLOCKS_SYNCHRONIZING_DEFAULT_COUNT            =  100;    //by default, blocks count in blocks downloading
 const size_t   COMMAND_RPC_GET_BLOCKS_FAST_MAX_COUNT         =  1000;
 
-const int      P2P_DEFAULT_PORT                              =  42069;
-const int      RPC_DEFAULT_PORT                              =  6969;
+const int      P2P_DEFAULT_PORT                              =  24001;
+const int      RPC_DEFAULT_PORT                              =  25000;
 const int      SERVICE_DEFAULT_PORT                          =  1337;
 
 const size_t   P2P_LOCAL_WHITE_PEERLIST_LIMIT                =  1000;
@@ -203,18 +203,17 @@ const uint64_t DATABASE_READ_BUFFER_MB_DEFAULT_SIZE          = 10;
 const uint32_t DATABASE_DEFAULT_MAX_OPEN_FILES               = 100;
 const uint16_t DATABASE_DEFAULT_BACKGROUND_THREADS_COUNT     = 2;
 
-const char     LATEST_VERSION_URL[]                          = "https://github.com/derogold/derogold/releases";
-const std::string LICENSE_URL                                = "https://github.com/derogold/derogold/blob/master/LICENSE";
+const char     LATEST_VERSION_URL[]                          = "https://github.com/JankyCoin/JankyCoin/releases";
+const std::string LICENSE_URL                                = "https://github.com/JankyCoin/JankyCoin/blob/master/LICENSE";
 const static   boost::uuids::uuid CRYPTONOTE_NETWORK         =
 {
-    {  0x20, 0x69, 0x6e, 0x73, 0x74, 0x61, 0x6c, 0x6c, 0x20, 0x67, 0x65, 0x6e, 0x74, 0x6f, 0x6f, 0x20  }
+    {  0x98, 0x13, 0x8d, 0x59, 0x14, 0x11, 0x6f, 0x6f, 0x29, 0x40, 0x19, 0x6a, 0x4a, 0x6a, 0x77, 0x21  }
 };
 
 const char* const SEED_NODES[] = {
-    "97.64.253.98:42069", // morpheus
-    "51.255.209.200:42069", // explorer.dego.gq
-    "23.96.93.180:42069" // Aluisyo
-    "116.250.211.215:42069", // stroppy
-    "5.172.219.172" //sniperviperman
+    "45.77.56.151:24001", // blimey
+    "140.82.14.209:24001", // sam
+    "149.248.53.249:24001" // snoblower mike
+    
 };
 } // CryptoNote
